@@ -1,0 +1,335 @@
+body{
+
+}
+
+.menu1{
+	display:block;
+	width:40px;
+	height: 40px;
+	position: absolute;
+	top:10px;
+	right:50%;
+	z-index: 30;
+}
+.menu2{
+	display: block;
+	width:40px;
+	height: 40px;
+	position: absolute;
+	top:10px;
+	right:50%;
+	z-index: 30;
+	display:none;
+}
+.menu1 .fa-bars{
+	font-size:40px;
+	color:#fff;
+}
+.menu2 .fa-times{
+	font-size:40px;
+	color:#fff;
+	
+}
+
+
+.carousell{
+	width:100%;
+	height: 100%;
+	background:green;
+	position: fixed;
+	top:0;
+	left:0;
+	overflow: hidden;
+}
+
+.slideshow{
+	position:relative;
+	max-width:100%;
+	height:100%;
+	background-image:url(pexels-photo-169738.jpeg);
+	background-position: center;
+	background-size:cover;
+	-webkit-transition:all 3s ease-in-out;
+    -moz-transition:all 3s ease-in-out;
+    -o-transition:all 3s ease-in-out;
+    -ms-transition:all 3s ease-in-out;
+    transition:all 3s ease-in-out;
+}
+
+.tooltip{
+	position:absolute;
+	background:yello;
+	top:40%;
+	left:20%;
+	width: 60%;
+	text-align: center;
+	color: #fff;
+	font-size:17px;
+}
+
+.container{
+	background:;
+	position: absolute;
+	top:70%;
+	left:0px;
+	width:100%;
+	margin:auto;
+	
+}
+
+
+.container .options{
+	background:blac;
+	padding:1%;
+	max-width:70%;
+	margin:auto;
+	border-top:1px solid #6e6e6f;
+
+}
+/*for the flip buttons*/
+/* basic menu styles */
+.block-menu {
+	display: block;
+	background:;
+	margin-top:-1%;
+}
+
+.block-menu li {
+	display: inline-block;
+	margin-right: 5%;
+}
+
+.block-menu li a {
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	font-family: 'Passion One', Arial, sans-serif;
+	font-smoothing: antialiased;
+	text-transform: uppercase;
+	overflow: visible;
+	line-heigt: 20px;
+	font-size: 15px;
+	padding: 15px 10px;
+	box-shadow: 5px 5px 5px #211e1e;
+}
+
+/* animation domination */
+.three-d {
+	perspective: 200px;
+	transition: all .07s linear;
+	position: relative;
+	cursor: pointer;
+}
+	/* complete the animation! */
+	.three-d:hover .three-d-box, 
+	.three-d:focus .three-d-box {
+		transform: translateZ(-25px) rotateX(90deg);
+	}
+
+.three-d-box {
+	transition: all .3s ease-out;
+	transform: translatez(-25px);
+	transform-style: preserve-3d;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/* 
+	put the "front" and "back" elements into place with CSS transforms, 
+	specifically translation and translatez
+*/
+.front {
+	transform: rotatex(0deg) translatez(25px);
+}
+
+.back {
+	transform: rotatex(-90deg) translatez(25px);
+	color: #ffe7c4;
+}
+
+.front, .back {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background:rgb(183, 182, 182);
+	padding: 15px 10px;
+	color: black;
+	pointer-events: none;
+	box-sizing: border-box;
+	border-radius:4px;
+}
+.back{background:black;color:white;} /*end flip style*/
+
+
+.slidedowncont{
+	display:none;
+	background-color:black;
+	background-image:url(pexels-photo-24580.jpg);
+	background-position: center;
+	background-size:cover;
+	color:white;
+	width:100%;
+	height: 100%;
+	position:fixed;
+	top:0;
+	left:0;
+	/* Chrome, Safari, Opera */
+    -webkit-perspective: 400px;
+    -webkit-animation: mymove 5s infinite;
+    /* Standard syntax */
+    animation: mymove 5s infinite;
+    perspective: 400px;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {-webkit-perspective: 100px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {perspective: 100px;}
+}
+
+
+.slidedown {
+	width:70%;
+	margin-left:12%;
+	height:100%;
+    padding: 50px;
+    position: absolute;
+    opacity:;
+    background-color:skyblue;
+    -webkit-transfor: rotateX(4deg); /* Chrome, Safari, Opera */
+    transfor: rotateX(4deg);
+}
+.slidedown li{
+	list-style-type: none;
+	padding: 10px;
+
+}
+
+.slidedown a{
+	color:white;
+	text-decoration:none;
+	-webkit-transition:2s ease-in;
+}
+
+.slidedown a:hover{
+	background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition:2s ease-in;
+}
+
+.socials{
+	background-color:;
+	width:100%;
+	border:1px solid black;
+	font-size:20px;
+}
+
+.socials a{
+	text-decoration:none;
+}
+.socials .fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.socials .fa:hover{ 
+	-webkit-transform: scale(1.1) rotate(360deg);
+	-moz-transform: scale(1.1) rotate(360deg);
+	-ms-transform: scale(1.1) rotate(360deg);
+	-o-transform: scale(1.1) rotate(360deg);
+	transform: scale(1.1) rotate(360deg);
+	color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+.fa-google-plus-official {
+  background: #dd4b39;
+  color: white;
+}
+
+
+
+
+
+
+.enjoy-css {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  border: none;
+  font: normal 30px/normal "Passero One", Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: 0 1px 0 rgb(204,204,204) , 0 2px 0 rgb(201,201,201) , 0 3px 0 rgb(187,187,187) , 0 4px 0 rgb(185,185,185) , 0 5px 0 rgb(170,170,170) , 0 6px 1px rgba(0,0,0,0.0980392) , 0 0 5px rgba(0,0,0,0.0980392) , 0 1px 3px rgba(0,0,0,0.298039) , 0 3px 5px rgba(0,0,0,0.2) , 0 5px 10px rgba(0,0,0,0.247059) , 0 10px 10px rgba(0,0,0,0.2) , 0 20px 20px rgba(0,0,0,0.14902) ;
+  -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.enjoy-css:hover {
+  color: rgba(169,214,169,1);
+  text-shadow: 0 1px 0 rgba(255,255,255,1) , 0 2px 0 rgba(255,255,255,1) , 0 3px 0 rgba(255,255,255,1) , 0 4px 0 rgba(255,255,255,1) , 0 5px 0 rgba(255,255,255,1) , 0 6px 1px rgba(0,0,0,0.0980392) , 0 0 5px rgba(0,0,0,0.0980392) , 0 1px 3px rgba(0,0,0,0.298039) , 0 3px 5px rgba(0,0,0,0.2) , 0 -5px 10px rgba(0,0,0,0.247059) , 0 -7px 10px rgba(0,0,0,0.2) , 0 -15px 20px rgba(0,0,0,0.14902) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+}
