@@ -1,0 +1,41 @@
+body{
+	font-family: 'Ubuntu', sans-serif;
+	opacity:0.1;
+	
+}
+body a{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.headerwrp{
+	width:100%;
+	background-color:#000;
+	position:fixed;
+	top:-50px;
+	left:0;
+	z-index: 10;
+}
+.header{overflow: auto;width:100%;background: purpl;}
+.header .left{
+	background:gree;
+	float:left;
+	width:20%;
+	padding:1%;
+}
+.header .right{
+	background:re;
+	float:right;
+	width:500px;
+	padding:1%;
+}
+.header .right a{margin-right:10px;}
+.header a{
+	text-decoration:none;
+	color:#fff;
+	padding:1%;
+}
+.active{
+	color:red;
+	background-color: red;
+	border-radius:3px;
+}
