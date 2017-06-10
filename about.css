@@ -147,7 +147,7 @@ section{
 	background-repeat: no-repeat;
 }
 .section2 .socials{
-	background-color:;
+	background-color:purple;
 	width:100%;
 }
 
@@ -215,7 +215,7 @@ section{
 footer{
 	background-color: #000;
 	margin-top: 50px;
-	padding:20px;
+	padding:2%;
 	color:white;
 	overflow: auto;
 	
@@ -254,7 +254,7 @@ footer .socials{
 
 
 footer .socials .fa {
-  padding: 2%;
+  padding: 3%;
   font-size: 100%;
   text-align: center;
   text-decoration: none;
@@ -296,14 +296,16 @@ footer .newsletter input{
 }
 @media screen and (max-width: 820px){
 	.section2 .teamimg{width:120px;height:120px;}
+	.section2 .socials .fa{padding: 5px;}
 }
 @media screen and (max-width: 610px){
 	.section2 .teamimg{width:100px;height:100px;}
 }
 @media screen and (max-width: 500px){
 	.section2 .teamimg{width:150px;height:150px;}
-	.section2 .teamimg{display: block;}
-	.section2 .meet-team .team{float:none;margin:auto;}
+	.section2 .teamimg{display: block;margin-left:-40px;}
+	.section2 .meet-team .team{float:none;margin:auto;background: red;}
+	.section2 .socials{width:80px;}
 }
 
 @media screen and (max-width:680px){
