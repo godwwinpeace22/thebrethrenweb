@@ -1,11 +1,7 @@
 $(document).ready(function(){
-	
-	$(window).mousemove(function(event) {
-  		$(".slideshow").animate({left : event.pageX/100, top : event.pageY/100},10);
-	});
 
 
-	$(".menu1").click(function(event){
+	$(".menu1 .fa").click(function(event){
 		$(".slidedowncont").slideDown("slow");
 		$(".menu1").hide("slow");
 		$(".menu2").fadeIn("slow");
@@ -13,7 +9,7 @@ $(document).ready(function(){
 		return false;
 	})
 
-	$(".menu2").click(function(event){
+	$(".menu2 .fa").click(function(event){
 		$(".slidedowncont").slideUp("slow");
 		$(".menu2").hide("slow");
 		$(".menu1").fadeIn("slow");
@@ -63,7 +59,7 @@ $(document).ready(function(){
 })
 	
 window.onload = function(argument) {
-	$(".menu1").animate({"top": "10px", "opacity":"1"},2000);
+	$(".menu1, .menu2").animate({"top": "10px", "opacity":"1"},2000);
 	$(".blocklist").animate({"margin-left": "0px", "opacity":"1"},2000);
 	//$(".blocklist1").animate({"margin-left": "0px", "opacity":"1"},2000);
 	$("body").animate({"opacity":"1"},2000);
